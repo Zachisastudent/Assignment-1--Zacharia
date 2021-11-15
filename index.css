@@ -1,0 +1,66 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .flex-col
+  {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(90deg, #020024 0%, #114357 35%, #F29492 100%);
+    border-style: groove;
+    background: #ccc;
+    opacity: 0.5;
+    text-align: center;
+    padding: 15px 4px;
+    text-align: center;
+    width:30 45;
+  }
+  .flex-col div{
+    color: black;
+    height: 120px;
+    width: 50%;
+    margin-bottom:  10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items:center;
+  }
+
+  
+  .flex-container > div {
+    background-image: linear-gradient(90deg, #020024 0%, #114357 35%, #F29492 100%);
+    background: #ccc;
+    opacity: 0.5;
+    width: 300px;
+    margin: 10px;
+    padding: 15px 4px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 50px;
+
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+  }
+  article, aside, footer, header {
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  nav, header {
+    order: -1;
+  }
+  article {
+    flex: 75%;
+  }
+  aside {
+    flex: 25%;
+  }
+ 
+ 
