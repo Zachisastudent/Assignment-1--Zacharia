@@ -21,5 +21,5 @@ Form to include users particulars that i can reply to.
 # Back to top
 used javascript to create back to top icon, once clicked will bring the user back to the nav bar.
 
-#Credits
+# Credits
 All images were from me!
