@@ -1,3 +1,7 @@
+
+/*nav statements for the styling of nav*/
+
+
 nav {
   justify-content: space-around;
   align-items: center;
@@ -5,7 +9,16 @@ nav {
   display: flex;
   background-image: linear-gradient(90deg, #020024 0%, #114357 35%, #F29492 100%);
   font-family: 'Poppins', sans-serif;
+  
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+/*fonts*/
 nav a{
   color:white;
   text-transform:uppercase;
@@ -14,11 +27,15 @@ nav a{
   border-radius: 3px;
 }
 
+
 nav a:hover,a.active  {
   border: 1px solid white;
   transition: .5s;
+  color: powderblue;
+
   
 }
+/*Zacharia Aslam logo on left side of nav bar*/
 .logo{
   color: rgb(226,226,226);
   text-transform: uppercase;
@@ -27,7 +44,7 @@ nav a:hover,a.active  {
 }
 .nav-links{
   display:flex;
-  width: 50%;
+  width: 70%;
   justify-content: space-around;
 }
 .nav-links li{
@@ -62,7 +79,7 @@ nav #icon{
   }
 }
 
-
+/*container for heading*/
 .flex-container {
     display: flex;
     text-decoration: none;
@@ -80,9 +97,8 @@ nav #icon{
     justify-content: center;
     position: relative;
     align-items:center;
-    background-image: linear-gradient(90deg, #020024 0%, #114357 35%, #F29492 100%);
     border-style: groove;
-    background: #ccc;
+    opacity: 0.9;
     padding: 15px 4px;
     text-align: center;
     width:100%;
@@ -93,37 +109,40 @@ nav #icon{
     width:100%;
     min-height: 10px;
     margin-bottom: 5px;
-    font-size: 20px;
-    color: rgb(105,105,105);
+    font-size: 40x;
     justify-content: center;
     align-items:center;
+
   }
 
   .flex-container > div {
-    background-image: linear-gradient(90deg, #020024 0%, #114357 35%, #F29492 100%);
-    background:  #e5e5e5;
-    width: 300px;
+    background-image: linear-gradient(90deg, #020024 0%, #114357 35% );
+    width: 400px;
+    color: white;
     margin: 10px;
     padding: 15px 4px;
     text-align: center;
     line-height: 75px;
-    font-size: 50px;
+    font-size: 30px;
+    border-style: double;
   }
+
+  /*styling for the education section*/
   .flex-item{
-   background-image: linear-gradient(90deg, #020024 0%, #114357 35%);
    padding: 5px;
-   width: 200px;
-   height: 100px;
-   margin: 10px;
+   width: 100px;
+   height: 70px;
+   margin: 4px;
    line-height: 100px;
-   color: white;
+   color: black;
    font-weight: bold;
-   font-size: 20px;
+   font-size: 30px;
    text-align: center;
    list-style: none;
  }
- .li{
-  color: rgb(105,105,105);
+ li{
+  font-size: 20px;
+  font-weight: normal;
  }
   .center {
     display: block;
@@ -132,11 +151,389 @@ nav #icon{
     width: 200px;
     height: auto;
   }
-  article, aside, footer, header {
+  /*article  or aside styling*/
+  article, aside {
     padding: 0.5rem;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-family: 'Poppins',sans-serif;
+    background-color: lightgray;
   }
-  hr.style5 {
-    background-color: #fff;
-    border-top: 2px dashed #8c8b8b;
+/* container class containing the special works items*/
+  .container{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    
+  }
+  /*style the speical works section*/
+  .flex-specialworks {
+  padding: 10%;
+  flex-grow: 1;
+  flex-basis: 20%;
+  position:relative;
+  /* 15% for borders*/
+  display: flex;
+  flex-direction: column;
+  border-style: groove;
+  }
+  .img {
+  max-width: 100%;
+  position:relative;
+  width : 402px;
+  height :480px;
+}
+
+.flex-content {
+  margin-top: auto;
+}
+
+@media (max-width: 1000px) {
+  .flex-specialworks {
+    flex: 3 50%;
+  }
+   img{
+  width: 400px;
+}
+}
+h2,h3{
+  font-family: 'Poppins', sans-serif;
+}
+/*highlighting of heading in the special works container*/
+.ribbon-highlight{
+  position:relative;
+  margin:0.1em;
+}
+.ribbon-highlight:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:lightgreen;
+  position:absolute;
+  width:100%;
+  border-left-color:transparent;
+  border-right-color:transparent;
+}
+
+/*footer*/
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+      text-align: center;
+      padding-bottom: 20px
+  }
+}
+
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+      margin-bottom: 0
+  }
+}
+
+.footer-dark .item.social {
+  text-align: center
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+      text-align: center;
+      margin-top: 20px
+  }
+}
+
+.footer-dark .item.social>a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75
+}
+
+.footer-dark .item.social>a:hover {
+  opacity: 0.9
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #fff ;
+  margin-bottom: 0
+}
+
+/*forms*/
+
+#contact-form {
+  max-width: 1208px;
+  max-width: 75.5rem;
+  margin: 0 auto;
+  text-align: left;
+}
+/*submit button=*/
+#contact, label, input[name="submit"] {
+  position: relative;
+}
+label > span, input, textarea, button {
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+label {
+  display: block;
+}
+label > span {
+  display: none;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font: 300 100%/1.2 'Poppins', sans-serif;
+  
+}
+input[type="text"], input[type="email"], textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+input.invalid, textarea.invalid {
+  border-color: #d5144d;
+}
+textarea {
+  height: 6em;
+}
+input[type="submit"], button {
+  background: lightgray;
+  color: #333;
+}
+input[type="submit"]:hover, button:hover {
+  opacity:0.5;
+}
+@media screen and (min-width: 30em) {
+  #contact-form h2 {
+    margin-left: 26.3736%;
+    font-size: 2em;
+    line-height: 1.5;
+  }
+  label > span {
+    vertical-align: top;
+    display: inline-block;
+    width: 26.3736%;
+    padding: 0.5em;
+    border: 1px solid transparent;
+    text-align: left;
+  }
+  input, textarea, button {
+    width: 73.6263%;
+    line-height: 1.5;
+  }
+  textarea {
+    height: 10em;
+  }
+  input[type="submit"], button {
+    margin-left: 26.3736%;
+  }
+}
+@media screen and (min-width: 48em) {
+  #contact-form {
+    text-align: justify;
+    line-height: 0;
+  }
+  #contact-form:after {
+    content: '';
+    display: inline-block;
     width: 100%;
   }
+  #contact-form h2 {
+    margin-left: 17.2661%;
+  }
+  #contact-form form, #contact-form aside {
+    vertical-align: top;
+    display: inline-block;
+    width: 65.4676%;
+    text-align: left;
+    line-height: 1.5;
+  }
+  #contact-form aside {
+    width: 30.9353%;
+  }
+}
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other, used in Work experience */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 550px; 
+  text-align: left;
+}
+.lastcol {
+  flex: 100%;
+  padding: 10px;
+  height: 300px
+}
+
+/*image style for special skills segment*/
+.nccimg{
+
+  height: 300px;
+  width:auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+/*styling for ordered list for programming language*/
+.box{
+  width:300px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.box h2{
+  color:#fff;
+  background:#03a9f4;
+  padding:10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family:'Poppins',sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box ul{
+  position: relative;
+  background:#fff;
+
+}
+.box ul li{
+  list-style: none;
+  padding:10px;
+  width:100%;
+  background:#fff;
+  box-shadow:0 5px 25px rgba(0,0,0,.1);
+  transition: transform 0.5s;
+}
+
+.box ul:hover li{
+  opacity: 0.2;
+
+}
+.box ul li:hover 
+{
+  transition:scale(1.1);
+  z-index:100;
+  background:rgb(72,72,72);
+  box-shadow:0 5px 25px rgba(0,0,0,.2);
+  color:#fff;
+  opacity: 1;
+}
+
+.box ul li span{
+  width:20px;
+  margin-bottom: 10px;
+  height:20px;
+  text-align:center;
+  line-height:20px;
+  background:#25bcff;
+  color:#fff;
+  display:inline-block;
+  border-radius:50%;
+  margin-right:10px;
+  font-size: 20px;
+  font-weight:600;
+  transform: translateY(-20px);
+  
+}
+.box ul li:hover span{
+  background:#25bcff;
+  color:#25bcff;
+}
+/*button to scroll back to top*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 50;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  width: 150px;
+  height: 40px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*underlines for heading of work experience*/
+.under {
+  -webkit-text-decoration: slateblue solid underline;
+  text-decoration: slateblue solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+}
+/*style images in the columns*/
+.imagescolumn {
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.rowimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*hover over text for date (Work experience)*/
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

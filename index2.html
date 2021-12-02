@@ -6,77 +6,330 @@
     <title>My Portfolio</title>
     <script src="script.js" defer></script>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-body{
+      body{
 
-  background-image: url('backimage2.jpg') ;
-  margin: 0;
+        
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+      }
+      #left { text-align: left; }
+      p{
+        font-weight: normal;
+        font-size: 20px;
+      }
+      ul.a {
+  list-style-position: outside;
+        }
 
 
     </style>
     <body>
-      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
       <nav>
         <div class = "logo">
           Zacharia's portfolio
         </div>
         <ul class = nav-links>
-          <li><a class="active" href="#About me">About me</a></li>
+          <li><a class="active" href="#About me">About Me</a></li>
           <li><a href="#Education">Education</a></li>
-          <li><a href="#Special Works">Special works</a></li>
+          <li><a href="#Work Experience">Work Experience</a></li>
+          <li><a href="#Special skills">Skills</a></li>
+          <li><a href="#CCA">CCA</a></li>
+          <li><a href="#Interests">Interests</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
 
           <div class ="flex-container">
-            <div>About me:</div>
+            <div id="About me">About me:</div>
           </div>
-      <img src="Imgofzac.jpg" alt="Image of zach" class="center">
+      
       <br>
       <br>
       
-        <div class = "flex-col">
-          <div><b>My name is Zacharia Aslam and i am a year 1 student studying Information Technology. I am in semster 2 and 
+      <div class = "flex-col">
+        
+        <div class ="row">
+          <img src="zachnobg.png" alt="Image of zach" class="center">
+          <p>My name is Zacharia Aslam and i am a year 1 student studying Information Technology. I am in semster 2 and 
             i have picked up valuable skills such as report writing, pointpoint presentation, using adobe AI and XD for design and programming
             languages such as C#, SQL and python. I am in the Ngee Ann Dragonboating team as i enjoy working out and breaking a sweat.
-            I believe in pushing myself in whatever i do and would love to share with you more about myself.<b></b>
-          </div>
+            I believe in pushing myself in whatever i do and would love to share with you more about myself.
+          </p>
+
+        </div>
         </div>
         <br><br>
         <div class="flex-container">
-          <div>Education:</div>
+          <div id="Education">Education:</div>
         </div>
         <ul class = "flex-col">
-          <li class="flex-item">Secondary school:
-            <hr class="style5">
+          <li class="flex-item"><u class = "under">Tertiary</u>
             <br>
-            <li style ="color: rgb(105,105,105);">Fairfield methodist secondary: 2016-2019</li>
+            <li>Ngee Ann Polytechnic: 2020-2024</li>
             <br>
-            <li style ="color: rgb(105,105,105);">'N' Level Certificate</li>
+            <li>'Polytechnic Foundation Program Certificate(PFP)</li>
             <br>
-            <li style ="color: rgb(105,105,105);">Awarded a<b>book prize</b>, 3rd in the level, Top in Mathematics and Science</li>
+            <li>Information Technology Year 1 student</li>
             <br>
-            <li style ="color: rgb(105,105,105);">Edusave scholarship 2019, Eagles Award 2019, Edusave Scholarship 2018</li>
           </li>
-          <li class="flex-item">Tiertiary education:
-            <hr class="style5">
+          <li class = "flex-item"><u class = "under">Secondary</u>
             <br>
-            <li style ="color: rgb(105,105,105);">Ngee Ann Polytechnic: 2020-2024</li>
+            <li>Fairfield Methodist Secondary: 2016-2019</li>
             <br>
-            <li style ="color: rgb(105,105,105);">'Polytechnic Foundation Program Certificate(PFP)</li>
+            <li>'N' Level Certificate</li>
             <br>
-            <li style ="color: rgb(105,105,105);">Information Technology Year 1 student</li>
+            <li>Awarded a book prize, 3rd in the level, Top in Mathematics and Science</li>
             <br>
+            <li>Edusave scholarship 2019, Eagles Award 2019, Edusave Scholarship 2018</li>
           </li>
         </ul>
-          
         </div>
-        <footer>
-          Copyright Zacharia Aslam
-        </footer>
-        
+        <div class="flex-container">
+          <div id="Work Experience">Work Experience:</div>
+        </div>
+        <div class = "flex-col">
+          <div class ="row">
+            <div class="column" style="background-color:#efefef;;">
+              <div class = "myDIV"><h2 class ="under"style="text-align: center;">Banquet</h2></div>
+              <div class="hide">September - November 2019</div>
+              <br>
+              <br>
+              <br>
+              <p>I worked hotels such as Grand Hyatt, Hilton and JW Mariott for events such as weddings and company dinners. During my working period of 1 month, i learnt customer service which was a valuable experience.
+               
+                
+               </p>
+               <br>
+               <b>I improved my:</b>
+               <ol class = "a">
+                 <li>Socialising skills</li>
+                 <li>Communication</li>
+               </ol>
+               
+              <p>I stepped out of my comfort zone of interact with people i have never met before as i had to provide quality service.
+                This also benefits my presentation as i am more confident and
+                comfortable speaking to others.</p> 
 
+            </div>
+            <div class="column" style="background-color:#CCCBCB;">
+              <div class = "myDIV"><h2 class = "under" style="text-align: center;">Venture Pte Ltd</h2> </div>
+              <div class="hide">September - November 2021, Semester 1 break</div>
+              <br>
+              <br>
+              <br>
+              <p>I worked at venture during my semster break as an IT packer, the job includes assembling, testing and packing of the product
+                called FLUKE. During my working period of 1 month, i learnt how to work with others and in a fast paced enivronment 
+                where i have to adapt quickly and learn many new things in this job</p>
+                <br> 
+                <b>Such as :</b>
+                <ol class="a">
+                <li>Adaptability</li>
+                <li>Being versatile</li>
+                <li>Complete ambiguous tasks</li>
+                <li>Teamwork</li>
+                </ol>
+                <p>This helps definitely helps with managing my group projects in school.</p>
+                
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class ="flex-container">
+          <div id = "Special skills">Skills:</div>
+        </div>
+        </h2>
+        <div class = "flex-col">
+          <div class = "row">
+            <div class ="lastcol", style="background-color: #efefef;">
+              
+                  <h2>Soft skills</h2>
+                  <div class ="box">
+                  <ul >
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Adaptability</li>
+                    <li>Growth mindset</li>
+                  </ul>
+              </div>
+        </div>
+        </div>
+            <div class = "row">
+              <div class ="lastcol", style="background-color: #efefef;">
+                
+                    <h2>Technical skills</h2>
+                    <div class ="box">
+                    <ul >
+                      <li>HTML,CSS,Javascript</li>
+                      <li>Python</li>
+                      <li>C#</li>
+                      <li>Microsoft office (Powerpoint, Excel, Word)</li>
+                      <li>Adobe AI, Adobe XD</li>
+                    </ul>
+                </div>
+          </div>
+          </div>
+
+          <div class="flex-container">
+            <div id="CCA">CCA:</div>
+          </div>
+          
+          <div class="flex-col">
+            <div class = "rowimg">
+            <div class = "imagescolumn">
+            <img  src="platoonpic.JPG" class = "nccimg">
+            <img  src = "ncc zacharia.JPG" class = "nccimg">
+          </div>
+        </div>
+            <div class="flex-content"><h2><u><span class="ribbon-highlight">National Cadet Corps (Land)</span></u></h2>
+            
+              <p>The image on the left is a trace of Boba Fett drawn using Adobe AI,  i learnt the drawing tool and how
+                to do curvatures and trace artwork. The middle image is an app icon i recreated of the meditation app called "Calm" and the last 
+                image is  a poster that comes with it. We learnt colour schemes and how to choose colours to complement and tell a story.
+                I am able to create posters, cover pages and  UI for apps and using Adobe AI.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex-col">
+            <img src="dragonboat picture.JPG" class = "nccimg">
+            <div class = "flex-content">
+            <h2><u><span class="ribbon-highlight">Ngee Ann Dragonboat</span></u></h2>
+              <p>I am the Captain of Ngee Ann Dragonboat team and is really passionate about this sport.
+                Exercising and fitness is my passion and i believe this sport will help me push my boundaries and
+                help me become the best version of myself. Our team is currently training hard and looking forwards to upcoming
+                competions. As a captain i help to plan trainings, bond with my juniors and to help them improve. I see this as 
+                a self-development project to improve Ngee Ann Dragonboat and to enhance my leadership.
+              </p>
+          </div>
+          </div>
+
+          <div class="flex-col">
+            <a href= "https://www.instagram.com/np.ictsociety/?hl=en"><img src="Year 1 Mass Phototaking.jpeg" class = "nccimg"></a>
+            <h4>(Click to see their instagram!)</h4>
+            <div class = "flex-content">
+            <h2><u><span class="ribbon-highlight">ICT Society</span></u></h2>
+              <p>I officially joined ICT society this september as i was intrigued by how fun orientation was. I decided that i want to make a difference and improve
+                experiences in ICT. I partipated in Camp DELPHI which was a 1 day virtual camp for classes to bonding in october before the semester started and was the 
+                attended as the gamemaster. I am looking forward to many more events such as CSOP (Compulsory Student Orientation Program) and community services projects coming up!
+              </p>
+          </div>
+          </div>
+        </div>
+          <br>
+          <br>
+          <br>
+        </section>
+        <div class ="flex-container">
+          <div id ="Interests">Interests</div>
+        </div>
+        <div class="flex-col">
+          <a href="https://info.digitalvillage.io/"><img src="Crypto logo.jpg" class = "nccimg"></a>
+          <h4>(Click image to see my incoming project that i am interested in)</h4>
+          <h2><u><span class="ribbon-highlight">CryptoCurrency, NFT, Metaverse</span></u></h2>
+            <p>I am very interested in Cryptocurrencies, NFTs and the metaverse as i believe blockchain is going to be the technology of our era. During 
+              my free time i will research on projects that are coming up and invest in projects that i believe will do well. This is a relatively
+              new space and interests me a lot. Play to earn games have been really popular as people need blockchain technology allows people
+              earn while spending time playing their game, this is an interesting concept of the metaverse will be the future of gaming.
+            </p>
+        </div>
+
+        <div class="flex-col">
+          <video width="300" height= auto; controls>
+            <source src="gymvid.mp4" type="video/mp4">
+          </video>
+          <h2><u><span class="ribbon-highlight">Fitness, Health and Wellness</span></u></h2>
+            <p>I believe that the saying "health is wealth" is very true and if you are not physically and mentally healthy, it comes with a price. Therefore
+              i always push myself beyond my boundaries in the gym and my sport (dragonboat). I go to gym about 5-6 times and i look forward to every session.
+              In the future i hope to be a Physical Trainer as i would like to help others in finding their purpose and help them to become a better version of themselves.
+            </p>
+        </div>
+
+        <br>
+        <br>
+        <div class ="flex-container">
+          <div id ="Contact">Contact me:</div>
+        </div>
+        <br>
+        <br>
+        
+        <section id="contact-form">
+          
+          <form id="contact" name="contact" accept-charset="utf-8">
+            <label><span>Name:</span><input name="name" required  type="text" placeholder="Name"/></label>
+            <label><span>Email:</span><input name="email" type="email" placeholder="Email"/></label>
+            <label><span>Message:</span><textarea name="message" placeholder="Message"></textarea></label>
+            <button name="submit" type="submit" onclick="alert('You have sent an email to Zacharia Aslam! He will get back to you shortly, thank you.')" value="Send">Send</button>
+          </form>
+          <aside>
+            <h2>Enquiries: </h2>
+            <p>Contact No: +65 9456 6789</p>
+            <p>Email:</p><a href="mailto:s10204144@connect.np.edu.sg" subject="email link">
+             s10204144@connect.np.edu.sg
+            </a>
+          </aside>
+        </section>
+        <br>
+        <br>
+        
+        <footer class="footer-dark">
+         <div class="col item social">
+                        <a href="https://www.facebook.com/profile.php?id=100006765166387"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/zacharia-aslam-9626691b6/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/aslamieeee/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/Zachisastudent"><i class ="fa fa-github"></i></a>
+                        <p class="copyright">Zacharia Aslam's portfolio © 2021</p>
+                  </div>
+          </footer>
+      </div>
+      <script>
+        //Get the button for the "Back to top" 
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <script>
+          function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+        </script>
     </body>
 </head>
 </html>
