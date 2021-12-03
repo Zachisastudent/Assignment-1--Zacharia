@@ -6,7 +6,8 @@ As employers they would want to
 ---- Contact me
 ---- View links to projects
 ---- View more information about me on platforms
--> I showed my creative side using bright background colours which changes periodically.
+-> I showed my creative side using bright background colours which changes periodically. 
+-> Navbar will not move as employers can focus more on the content instead to making the navbar hover.
 # Features
  About me, Education, Work Experience, Skills, CCA, Interest and Contact forms, i also used javascript to create a back to top icon to go to my nav bar. Hover elements to show date of work experience details.
  # About me
@@ -23,3 +24,4 @@ used javascript to create back to top icon, once clicked will bring the user bac
 
 # Credits
 All images were from me!
+Links are linked to my social media platforms
