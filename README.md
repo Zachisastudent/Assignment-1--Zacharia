@@ -2,12 +2,7 @@
 This is an assignement to create my personal portfolio. I want to market myself to potential job employers who may acknowledge my skills and my interest to add value in their workplace as i belief that i can make an impact and change to an organisation.
 # Design Process
 -> This website is focused on impressing employers and telling a story about myself.
-As employers they would want to 
----- Contact me
----- View links to projects
----- View more information about me on platforms
--> I showed my creative side using bright background colours which changes periodically. 
--> Navbar will not move as employers can focus more on the content instead to making the navbar hover.
+As employers they would want to: Contact me , view links to projects and view more information about me on platforms. I showed my creative side using bright background colours which changes periodically. Navbar will not move as employers can focus more on the content instead to making the navbar hover.
 # Features
  About me, Education, Work Experience, Skills, CCA, Interest and Contact forms, i also used javascript to create a back to top icon to go to my nav bar. Hover elements to show date of work experience details.
  # About me
